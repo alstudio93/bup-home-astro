@@ -1,13 +1,21 @@
+---
+import BasicScripts from "../components/core/BasicScripts.astro";
+import FontAwesome from "../components/imports/FontAwesome.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<FontAwesome />
 		<meta name="generator" content={Astro.generator} />
+
 		<title></title>
 	</head>
-	<body>
+	<body class="dark:text-slate-200">
 		<slot />
+		<BasicScripts />
 	</body>
 </html>

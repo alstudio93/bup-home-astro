@@ -1,0 +1,15 @@
+---
+import NavLinks from "./NavLinks";
+---
+
+<div
+  id="stylingWrapper"
+  class="w-full mb-5 p-4 fixed top-0 z-40 bg-white dark:bg-black dark:text-white"
+>
+  <nav
+    class="flex justify-between items-center w-full max-w-section mx-auto font-nunito"
+  >
+    <img src="/assets/logo.webp" class="w-20" />
+    <NavLinks client:load />
+  </nav>
+</div>

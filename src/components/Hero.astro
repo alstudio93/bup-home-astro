@@ -1,0 +1,100 @@
+---
+// import { Image } from "@astrojs/image/components";
+---
+
+<style>
+    .register-btn {
+        background-image: linear-gradient(
+            to right,
+            rgb(82, 82, 193),
+            rgb(103, 238, 222)
+        );
+        background-size: 175%;
+        transition: background-position 1s ease;
+        background-position: left;
+    }
+
+    .register-btn:hover,
+    .register-btn:focus {
+        background-position: right;
+        transition: background-position 1s ease;
+    }
+
+    .login-btn {
+        background-image: linear-gradient(
+            to right,
+            rgb(82, 82, 193),
+            rgb(103, 238, 222)
+        );
+        background-size: 175%;
+        transition: background-position 1s ease;
+        background-position: left;
+    }
+
+    .login-btn:hover,
+    .login-btn:focus {
+        background-position: right;
+        transition: background-position 1s ease;
+    }
+
+    #hero {
+        min-height: 100vh;
+        padding-top: 30px;
+    }
+
+    @media screen and (min-height: 800px) {
+        #hero {
+            padding-top: 90px;
+            min-height: calc(100vh - 60px);
+        }
+    }
+</style>
+<header
+    id="hero"
+    class="font-quicksand max-w-section w-full mx-auto flex flex-col-reverse justify-center items-center xl:flex-row xl:justify-between xl:items-center xl:pt-[0px] relative"
+>
+    <div class="mt-6 flex flex-col gap-y-3 max-w-xl text-center xl:text-left">
+        <h1
+            class="drop-shadow-regular text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] font-medium text-center leading-snug text-hero-h1 xl:text-left"
+        >
+            Never Miss a <br /> Connection Again.
+        </h1>
+        <p
+            class="font-nunito font-normal text-center leading-loose xl:text-left"
+        >
+            Save time, money, & never miss a connection again with your new
+            digital business card - BŪP! You only get one first impression, so
+            ditch the paper business cards, and join the future of networking
+            today!
+        </p>
+
+        <p
+            class="font-nunito text-base md:text-[1.1rem] leading-9 text-paragraph"
+        >
+        </p>
+
+        <div
+            class="pt-3 flex xs:flex-col sm:flex-row gap-x-7 justify-center items-center gap-y-5 xl:justify-start"
+        >
+            <a
+                href="/"
+                class="register-btn text-white w-40 p-3 text-base text-center border-none rounded-2xl shadow-lg cursor-pointer dark:shadow-none"
+                >Register
+            </a>
+
+            <a
+                href="/"
+                target="_blank"
+                rel="noopener"
+                class="login-btn text-white w-40 p-3 text-base text-center border-none rounded-2xl shadow-lg cursor-pointer dark:shadow-none"
+                >Login
+            </a>
+        </div>
+    </div>
+
+    <img
+        src="../assets/hero-mockup.webp"
+        alt="bup phone mockup"
+        class="hero-img w-48 sm:w-60 md:w-80 xl:w-[450px] drop-shadow-lg"
+    />
+</header>

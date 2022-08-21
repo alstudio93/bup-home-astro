@@ -1,11 +1,14 @@
 ---
+import Hero from "../components/Hero.astro";
+import MissionStatement from "../components/MissionStatement.astro";
+import Navbar from "../components/Navbar/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
-import BasicScripts from "../components/core/BasicScripts.astro";
 ---
 
 <Layout>
 	<main class="dark:bg-black">
-		<button data-bup-toggle-color-scheme>Theme</button>
+		<Navbar />
+		<Hero />
+		<MissionStatement />
 	</main>
-	<BasicScripts />
 </Layout>
