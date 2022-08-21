@@ -1,0 +1,60 @@
+---
+---
+
+<div
+    class="relative flex w-screen justify-center py-20 pb-40 dark:bg-slate-100"
+>
+    <h2
+        class="text-section-h2 text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] font-medium"
+    >
+        Brands that use BŪP
+    </h2>
+    <div id="wrapper" class="absolute flex gap-x-10 brands mt-28 py-2 px-3">
+        <img
+            class="w-20 drop-shadow-xl"
+            src="/assets/brandImages/bwim-logo.webp"
+        />
+        <img class="w-20 drop-shadow-xl" src="/assets/brandImages/ut-logo.webp"
+        />
+        <img
+            class="w-20 drop-shadow-xl"
+            src="/assets/brandImages/century-21-be3-logo.webp"
+        />
+        <img
+            class="w-20 drop-shadow-xl"
+            src="/assets/brandImages/century-21-be3.webp"
+        />
+        <img
+            class="w-20 drop-shadow-xl"
+            src="/assets/brandImages/dwntwn-social.webp"
+        />
+        <img
+            class="w-20 drop-shadow-xl"
+            src="/assets/brandImages/the-switzer-hych-group-logo.webp"
+        />
+        <img class="w-20" src="/assets/brandImages/charrismusic.png" />
+    </div>
+
+    <style>
+        .brands {
+            position: absolute;
+            overflow: hidden;
+            height: 100px;
+            animation: move 80s linear infinite;
+            left: 100%;
+        }
+
+        .brands img {
+            object-fit: contain;
+        }
+
+        @-webkit-keyframes move {
+            from {
+                left: 100%;
+            }
+            to {
+                left: -60%;
+            }
+        }
+    </style>
+</div>
